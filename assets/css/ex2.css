@@ -1,0 +1,599 @@
+/*universal selector 
+style for whole page*/
+*
+{
+margin: 0px;
+padding: 0px;
+}
+
+.nav_bar
+{
+    position: sticky;
+    top:0;
+    display: flex;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; 
+}
+/*style used for logo*/
+.nav_bar .logo
+{
+  height:100px;
+  background-repeat: no-repeat;
+  width: 200px;
+}
+/*end of style used for logo*/
+/*style used for navigation liks*/
+.navi_bar li
+{ 
+  padding: 5px;
+  margin: 25px 0px 0px 12px;
+  list-style-type: none;
+  display:inline-block;
+}
+li a
+{
+  font-size:20px;
+  font-weight: 500;
+  color:rgb(233, 233, 233);
+  text-decoration:none;
+  margin-left: 100px;    
+
+}
+#active12:hover
+{
+  font-size: 22px;
+  padding: 10PX;
+  /* background-color:black; */
+  /* border-radius: 10px; */
+  border:2px solid white  ;
+}
+/*end of style used for navigation liks*/
+
+
+
+
+
+
+
+/*style for hero banner */
+.banner
+{
+    height: 800px;
+    width:auto;
+    background-image:url("https://images.unsplash.com/photo-1611785677708-128fc827a1e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80");
+    background-repeat:no-repeat;
+    
+}
+.banner_text
+{
+    width: 650px; 
+    border-radius: 20px;
+    font-size: 35px;
+    color:aliceblue;
+    text-align: center;
+    margin-top:200px;
+    margin-left: 350px;
+    backdrop-filter:blur(10px);
+    animation: 3s slide-right;
+}
+/*end of style for hero banner */
+/*style for types of car */
+td img
+{
+    padding: 51px;
+    height: 200px;
+    width: 232px;
+    border-radius: 95px;
+}
+td img:hover
+{
+  box-shadow: 10px 10px 10px grey;
+}
+td h4
+{
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 80px;
+}
+
+td p
+{
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 80px;
+}
+/*end of style for types of car */
+
+
+/*style for promotional banner*/
+.promo_banner
+{
+  background-color:whitesmoke;
+  height: 300px;
+}
+h3
+{
+  font-size: 50px;
+  color:BLACK;
+  text-align: center;
+  padding-top: 80px;
+}
+.promo_banner > p
+{
+  font-size: 25px;
+  color:grey;
+  text-align: center;
+  padding-top: 70px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*end of style for promotional banner*/
+
+/*style for content and image of body using grid-container*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+
+}
+
+.grid-container > div {
+  justify-content: center;
+  background-color:#080808;
+  text-align: left;
+  padding: 20px 0;
+}
+
+.side_img >img
+{
+  height:400px;
+  width: 500px;
+  padding-right: 35px;
+  border-radius: 20px;
+}
+.grid-container > div > p
+{
+  padding-top: 40px;
+  padding-left:50px ;
+  padding-right: 100px;
+  font-size: 25px;
+  color:whitesmoke;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2
+{
+  font-size: 50px;
+  color: whitesmoke;
+  padding-top: 40px;
+  padding-left:50px ;
+  padding-right: 80px;
+}
+
+
+.about_us
+{
+  display: flex;
+  background-color: black;
+
+}
+.first_block img
+{
+
+height: 400px;
+width: 505px;
+border-radius: 15px;
+}
+.about_us h6
+{
+  font-size: 50px;
+  color: whitesmoke;
+  padding-top: 20px;
+  padding-left: 60px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about_us p
+{
+  justify-content: center;
+  padding: 10px 15px 10px 60px;
+  font-size: 25px;
+  color:whitesmoke;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/*style for footer of quick links*/
+.f_container
+{
+  display: flex;
+  height: 400px;
+  width: auto;
+}
+.fitem
+{
+  background-color:rgba(37, 37, 37, 0.432);
+  height: 400px;
+  width: 200px;
+}
+.first_text
+{
+  padding: 15px;
+  text-align: center;
+  color:white;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.second_text
+{
+  padding: 15px;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.second_text a
+{
+  text-decoration: none;
+  color:red;
+  font-weight: 100;
+  font-size: 15px;
+
+}
+.third_text
+{
+  background-color: blue;
+  height: 120px;
+  width: 120px;
+}
+
+
+
+.item2
+{
+background-color:rgba(37, 37, 37, 0.432)black;
+flex-grow: 2.5;
+}
+.item2 ul
+{
+  padding: 20px 0px 0px 50px;
+} 
+.item2 ul >li
+{
+  color: rgb(177, 2, 2);
+  list-style-type: none;
+  padding: 15px; 
+}
+.item2 ul >li > a
+{
+  text-decoration: none;
+  color:red;
+}
+
+.item3
+{
+  background-color:rgba(37, 37, 37, 0.432);
+  flex-grow: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*style for contact form */
+.contact_form
+{
+  height: 900px;
+  width:auto;
+  background-image:url("../img/cont_form_img.jpg");
+  background-repeat:no-repeat;
+  justify-content: center;
+}
+.class_2
+{
+  height:500px;
+  width:645px;
+  /* background-color:red; */
+}
+.class_2 form
+{
+  box-sizing: border-box;
+  margin:65px 0px 0px 455px;
+  width: 350px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.class_2 .btn_sub
+{
+     background-color: rgb(240, 9, 9);
+     margin-top:15px;
+     margin-left:590px;
+     width: 150px;
+     height:40px;
+     color: white;
+} 
+::placeholder 
+{
+  color:white;
+  opacity: 1; /* Firefox */
+}
+input[type="text"]
+{
+  background-color: transparent;
+  width:380px;
+  margin:20px;
+  height:40px;
+  font-size:25px;
+  border: 2px solid white;
+}
+input[type="email"]
+{
+  background-color: transparent;
+  width:380px;
+  margin:20px;
+  height:40px;
+  font-size:25px;
+  border: 2px solid white;
+}
+input[type="number"]
+{
+  background-color: transparent;
+  width:380px;
+  margin:20px;
+  height:40px;
+  font-size:25px;
+  border: 2px solid white;
+}
+.class_2 button:hover
+{
+  box-shadow: 20px 20px 50px 15px red;
+}
+/*style end for contact form */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer starts from here */
+
+.foot_body
+{
+  /* margin: 20px; */
+  height:420px;
+  width: auto;
+  background-color:black;
+}
+.foot_head 
+{
+  justify-content: center;
+  text-align: center;
+  padding-top:30px;
+}
+.foot_head ul li
+{
+  display: inline;
+  padding: 10px;
+}
+.foot_block
+{
+  margin-top:30px;
+  display: flex;
+  justify-content: center;
+  gap:50px;
+}
+.foot_box
+{
+  height:250px;
+  width: 350px;
+}
+.box_para
+{
+  width:255px;
+  height:250px;
+  margin:10px 0px 0px 30px;
+  font-size:19px;
+}
+.box_para ul li a
+{
+  display: list-item;
+  list-style: none;
+  margin-top:15px;
+  font-size:15px;
+  font-weight:500;
+  text-transform:uppercase;
+  padding:1px;
+  margin-left:35px;
+}
+.but10 button
+{
+background-color: rgb(245, 11, 11);
+margin-top:12px;
+width: 150px;
+height:40px;
+color: white;
+}
+.cont_list
+{
+  height:120px;
+  width:250px;
+}
+.cont_list ul li a
+{
+  display: list-item;
+  list-style: none;
+  margin-top:15px;
+  font-size:15px;
+  text-transform:uppercase;
+  margin-left:35px;
+}
+.bottom_border p
+{
+margin-top:30px;
+text-align: center;
+padding-top:25px;  
+color: whitesmoke;
+}
+.box_input input[type="text"]
+{
+ margin: 10px 0px 0px 0px;
+ height: 40px;
+ width: 240px;
+ font-size:19px;
+}
+
+/* footer ends from here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* animation start from here  */
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+     }
+@keyframes slide-right 
+{
+   0%{
+    margin-left: -100%;
+    color:blue;
+  }
+  100% {
+    margin-left: 25%;
+  }
+}
